@@ -8,7 +8,7 @@ class Ship():
         self.ai_settings = ai_settings
 
         # Load the ship image, and get its rect.
-        self.image = pygame.image.load('images/ship.bmp')
+        self.image = pygame.image.load(r'C:\Users\user\Desktop\Github\simple_game\Alien_Invasion\images\ship.bmp')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
