@@ -13,8 +13,7 @@ class Settings():
         self.ship_limit = 3
 
         # Bullet settings.
-        self.bullet_speed_factor = 3
-        self.bullet_width = 3
+        self.bullet_width = 300
         self.bullet_height = 15
         self.bullet_color = 60, 60, 60
         self.bullets_allowed = 3
@@ -24,14 +23,13 @@ class Settings():
         self.fleet_drop_speed = 10
 
         # How quickly the game speeds up
-        self.speedup_scale = 1.4
-
+        self.speedup_scale = 1.3
         self.initialize_dynamic_settings()
 
     
     def initialize_dynamic_settings(self):
         '''Initialize settings that change throughout the game'''
-        self.ship_speed_factor = 1.5
+        self.ship_speed_factor = 1.3
         self.bullet_speed_factor = 3
 
         # fleet_direction of 1 represents right, -1 represents left.
@@ -39,5 +37,5 @@ class Settings():
 
     def increase_speed(self):
         self.ship_speed_factor *= self.speedup_scale
-        self.bullet_speed_factor *+ self.speedup_scale
+        self.bullet_speed_factor *= self.speedup_scale
         self.alien_speed_factor *= self.speedup_scale
