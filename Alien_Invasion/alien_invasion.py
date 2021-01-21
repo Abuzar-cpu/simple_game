@@ -1,4 +1,5 @@
 import pygame
+import os
 from pygame.sprite import Group
 
 from settings import Settings
@@ -41,5 +42,8 @@ def run_game():
             gf.update_aliens(ai_settings, stats, screen, sb, ship, aliens, bullets)
         
         gf.update_screen(ai_settings, screen, sb, stats, ship, aliens, bullets, play_button)
-
+os.system('cmd /c "cls"')
 run_game()
+
+
+
